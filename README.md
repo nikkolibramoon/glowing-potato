@@ -118,6 +118,45 @@ FROM Reviews
 GROUP BY product_id;
 ```
 
+## Functions
+
+### Database Functions
+
+You can create and use functions to add new customers, products, and reviews, as well as update product quantities and delete products.
+
+### Creating Functions
+
+Create the functions by executing the 12_database_functions.sql file.
+
+```bash
+psql -d vintage_marketplace -f 12_database_functions.sql
+```
+### Example Function Usage
+Execute the example queries in the 13_functions_queries.sql file.
+```bash
+psql -d vintage_marketplace -f 13_functions_queries.sql
+```
+
+## Views
+
+### Creating Views
+
+Create the views by executing the following files.
+```bash
+psql -d vintage_marketplace -f 14_top_rated_products_view.sql
+```
+```bash
+psql -d vintage_marketplace -f 15_recent_customers_signup_view.sql
+```
+```bash
+psql -d vintage_marketplace -f 16_low_stock_products_view.sql
+```
+### Example View Usage
+Execute the example queries in the 17_views_queries.sql file.
+```bash
+psql -d vintage_marketplace -f 17_views_queries.sql
+```
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
